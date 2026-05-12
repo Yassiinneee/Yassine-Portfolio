@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yassine KLT — Network & Software Engineer | Cybersecurity Expert</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ NAV ═══════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-logo"><span>&gt;_</span> yassine.klt</div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+    <ul id="navMenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════════════════════ HERO ══════════════════════════════ -->
+  <section class="hero" id="about">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="hero-content">
+      <div class="hero-tag" id="heroTag">Available for work &mdash; The entire world</div>
+      <h1>
+        <span class="line1">Yassine KLT</span>
+        <span class="line2" id="typedTitle"></span>
+      </h1>
+      <p class="hero-desc">
+        > Full-stack engineer specializing in Next.js, React &amp; Angular.<br>
+        > Network architect &amp; Cisco-certified cybersecurity professional.<br>
+        > Building secure, scalable, production-grade systems.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Projects &#8599;</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <!-- Profile image -->
+    <div class="hero-image-wrap">
+      <div class="hero-image-frame">
+        <img src="yassine.jpg" alt="Yassine KLT" class="hero-photo" />
+        <div class="hero-image-glow"></div>
+        <div class="hero-image-badge">
+          <span>&#9679;</span> Available
+        </div>
+      </div>
+    </div>
+    <!-- Particle canvas -->
+    <canvas id="particleCanvas"></canvas>
+  </section>
+
+  <!-- ════════════════════════════ STATS BAR ════════════════════════════ -->
+  <div class="stats-bar">
+    <div class="stat-item">
+      <div class="stat-num" data-count="5">0</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" data-count="30">0</div>
+      <div class="stat-label">Projects Delivered</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">Cisco</div>
+      <div class="stat-label">Certified Security</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" data-count="3">0</div>
+      <div class="stat-label">Core Frameworks</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════ SKILLS ═════════════════════════════ -->
+  <section id="skills" class="reveal">
+    <div class="section-header">
+      <span class="section-num">01.</span>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">&#11041;</div>
+        <div class="skill-name">Frontend Engineering</div>
+        <p class="skill-desc">Expert-level development of high-performance, accessible web applications with modern frameworks.</p>
+        <div class="skill-tags">
+          <span class="tag tag-cyan">Next.js</span>
+          <span class="tag tag-cyan">React</span>
+          <span class="tag tag-cyan">Angular</span>
+          <span class="tag tag-cyan">TypeScript</span>
+          <span class="tag tag-cyan">Tailwind</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">&#10753;</div>
+        <div class="skill-name">Backend &amp; APIs</div>
+        <p class="skill-desc">Building robust RESTful &amp; GraphQL APIs, microservices architecture, and scalable server infrastructure.</p>
+        <div class="skill-tags">
+          <span class="tag tag-green">Node.js</span>
+          <span class="tag tag-green">Express</span>
+          <span class="tag tag-green">Python</span>
+          <span class="tag tag-green">PostgreSQL</span>
+          <span class="tag tag-green">MongoDB</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">&#10792;</div>
+        <div class="skill-name">Network Engineering</div>
+        <p class="skill-desc">Design, configuration, and optimization of enterprise-grade network infrastructure and protocols.</p>
+        <div class="skill-tags">
+          <span class="tag tag-purple">Cisco IOS</span>
+          <span class="tag tag-purple">OSPF/BGP</span>
+          <span class="tag tag-purple">VLANs</span>
+          <span class="tag tag-purple">Firewalls</span>
+          <span class="tag tag-purple">SD-WAN</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">&#11041;</div>
+        <div class="skill-name">DevOps &amp; Cloud</div>
+        <p class="skill-desc">CI/CD pipelines, containerization, and cloud infrastructure management for continuous delivery.</p>
+        <div class="skill-tags">
+          <span class="tag tag-cyan">Docker</span>
+          <span class="tag tag-cyan">Kubernetes</span>
+          <span class="tag tag-cyan">AWS</span>
+          <span class="tag tag-cyan">GitHub Actions</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">&#10753;</div>
+        <div class="skill-name">Cybersecurity</div>
+        <p class="skill-desc">Penetration testing, vulnerability assessment, threat modeling, and secure system architecture design.</p>
+        <div class="skill-tags">
+          <span class="tag tag-green">Cisco CyberOps</span>
+          <span class="tag tag-green">Wireshark</span>
+          <span class="tag tag-green">SIEM</span>
+          <span class="tag tag-green">IDS/IPS</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">&#10792;</div>
+        <div class="skill-name">System Design</div>
+        <p class="skill-desc">Architecting scalable distributed systems with high availability, fault tolerance, and optimized performance.</p>
+        <div class="skill-tags">
+          <span class="tag tag-purple">Microservices</span>
+          <span class="tag tag-purple">Redis</span>
+          <span class="tag tag-purple">Load Balancing</span>
+          <span class="tag tag-purple">CDN</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proficiency bars -->
+    <div class="bars-grid">
+      <div>
+        <div class="skill-bar-group">
+          <div class="skill-bar-top"><span class="skill-bar-name">Next.js / React</span><span class="skill-bar-pct">96%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="96"></div></div>
+        </div>
+        <div class="skill-bar-group">
+          <div class="skill-bar-top"><span class="skill-bar-name">Angular</span><span class="skill-bar-pct">90%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar-group">
+          <div class="skill-bar-top"><span class="skill-bar-name">Node.js / Backend</span><span class="skill-bar-pct">88%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="skill-bar-group">
+          <div class="skill-bar-top"><span class="skill-bar-name">Network Engineering</span><span class="skill-bar-pct">93%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="93"></div></div>
+        </div>
+        <div class="skill-bar-group">
+          <div class="skill-bar-top"><span class="skill-bar-name">Cybersecurity (Cisco)</span><span class="skill-bar-pct">91%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="91"></div></div>
+        </div>
+        <div class="skill-bar-group">
+          <div class="skill-bar-top"><span class="skill-bar-name">DevOps / Cloud</span><span class="skill-bar-pct">85%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ CYBERSECURITY ══════════════════════════ -->
+  <section id="security" class="section-alt reveal">
+    <div class="section-header">
+      <span class="section-num">02.</span>
+      <h2 class="section-title">Cybersecurity Expertise</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="cyber-grid">
+      <div class="cyber-panel">
+        <h3><span class="dot"></span> Network Security</h3>
+        <ul class="cyber-list">
+          <li>Cisco ASA &amp; Firepower Firewall configuration &amp; management</li>
+          <li>VPN design: IPSec, SSL, site-to-site &amp; remote access</li>
+          <li>Intrusion Detection &amp; Prevention Systems (IDS/IPS)</li>
+          <li>Network access control with 802.1X &amp; Cisco ISE</li>
+          <li>Packet analysis &amp; traffic forensics with Wireshark</li>
+          <li>Secure network segmentation &amp; VLAN architecture</li>
+        </ul>
+      </div>
+
+      <div class="cyber-panel">
+        <h3><span class="dot"></span> Threat &amp; Incident Response</h3>
+        <ul class="cyber-list">
+          <li>SIEM deployment &amp; correlation rule development</li>
+          <li>Vulnerability assessment &amp; penetration testing</li>
+          <li>Malware analysis &amp; reverse engineering fundamentals</li>
+          <li>Security monitoring &amp; SOC operations</li>
+          <li>Incident response planning &amp; forensic investigation</li>
+          <li>Threat intelligence &amp; IOC analysis</li>
+        </ul>
+      </div>
+
+      <div class="cyber-panel">
+        <h3><span class="dot"></span> Application Security</h3>
+        <ul class="cyber-list">
+          <li>Secure coding practices &amp; OWASP Top 10 mitigation</li>
+          <li>OAuth 2.0, JWT, and session security implementation</li>
+          <li>API security hardening &amp; rate limiting strategies</li>
+          <li>HTTPS/TLS certificate management &amp; pinning</li>
+          <li>CSRF, XSS, SQLi protection in web applications</li>
+          <li>Security code review &amp; static analysis</li>
+        </ul>
+      </div>
+
+      <div class="cyber-panel">
+        <h3><span class="dot"></span> Certifications &amp; Standards</h3>
+        <ul class="cyber-list">
+          <li>Cisco Certified CyberOps Associate (CCCA)</li>
+          <li>Cisco CCNA — Routing, Switching &amp; Security</li>
+          <li>ISO 27001 information security awareness</li>
+          <li>NIST Cybersecurity Framework implementation</li>
+          <li>PCI-DSS compliance &amp; hardening guidelines</li>
+          <li>CompTIA Security+ equivalent knowledge</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ PROJECTS ═══════════════════════════ -->
+  <section id="projects" class="reveal">
+    <div class="section-header">
+      <span class="section-num">03.</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <!-- Filter buttons -->
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nextjs">Next.js</button>
+      <button class="filter-btn" data-filter="react">React</button>
+      <button class="filter-btn" data-filter="angular">Angular</button>
+      <button class="filter-btn" data-filter="security">Security</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+      <div class="project-card" data-category="nextjs security">
+        <div class="project-type">Full-Stack · Next.js</div>
+        <div class="project-name">SecureOps Dashboard</div>
+        <p class="project-desc">Real-time security operations center dashboard with live network monitoring, threat detection alerts, and automated incident ticketing. Built with Next.js 14 App Router, WebSockets, and Node.js backend.</p>
+        <div class="project-tech">
+          <span class="tag tag-cyan">Next.js 14</span>
+          <span class="tag tag-green">Node.js</span>
+          <span class="tag tag-purple">PostgreSQL</span>
+          <span class="tag tag-cyan">WebSocket</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="angular">
+        <div class="project-type">Enterprise App · Angular</div>
+        <div class="project-name">Network Topology Mapper</div>
+        <p class="project-desc">Interactive enterprise network topology visualization tool with real-time device status monitoring, SNMP integration, and automated Cisco IOS configuration backups. Used by 200+ network admins.</p>
+        <div class="project-tech">
+          <span class="tag tag-cyan">Angular 17</span>
+          <span class="tag tag-green">D3.js</span>
+          <span class="tag tag-purple">SNMP</span>
+          <span class="tag tag-cyan">Cisco API</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="react security">
+        <div class="project-type">Platform · React</div>
+        <div class="project-name">Zero-Trust Auth Platform</div>
+        <p class="project-desc">Multi-tenant authentication and authorization platform implementing zero-trust principles. Features MFA, device fingerprinting, anomaly detection, and comprehensive audit logging.</p>
+        <div class="project-tech">
+          <span class="tag tag-cyan">React</span>
+          <span class="tag tag-green">OAuth 2.0</span>
+          <span class="tag tag-purple">Redis</span>
+          <span class="tag tag-cyan">Docker</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="security">
+        <div class="project-type">Infrastructure · DevSecOps</div>
+        <div class="project-name">Automated Pen-Test Pipeline</div>
+        <p class="project-desc">CI/CD-integrated security testing pipeline that runs automated vulnerability scans, OWASP checks, and network penetration tests on every deployment. Generates detailed risk reports.</p>
+        <div class="project-tech">
+          <span class="tag tag-green">Python</span>
+          <span class="tag tag-purple">GitHub Actions</span>
+          <span class="tag tag-cyan">OWASP ZAP</span>
+          <span class="tag tag-green">Nmap</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="nextjs">
+        <div class="project-type">E-Commerce · Next.js</div>
+        <div class="project-name">High-Performance Storefront</div>
+        <p class="project-desc">Headless e-commerce platform achieving 99 Lighthouse performance score. SSR/ISR strategies, edge caching, payment integration, and PCI-DSS compliant checkout flow.</p>
+        <div class="project-tech">
+          <span class="tag tag-cyan">Next.js</span>
+          <span class="tag tag-green">Stripe</span>
+          <span class="tag tag-purple">Vercel Edge</span>
+          <span class="tag tag-cyan">Sanity CMS</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="angular security">
+        <div class="project-type">SaaS · Angular + Node</div>
+        <div class="project-name">Enterprise VPN Manager</div>
+        <p class="project-desc">Centralized VPN policy management system for enterprise Cisco ASA/Firepower deployments. Automated tunnel provisioning, certificate management, and compliance reporting.</p>
+        <div class="project-tech">
+          <span class="tag tag-cyan">Angular</span>
+          <span class="tag tag-green">Cisco ASA API</span>
+          <span class="tag tag-purple">PKI</span>
+          <span class="tag tag-cyan">MySQL</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CERTIFICATIONS ════════════════════════ -->
+  <section class="reveal" style="padding-top:0;">
+    <div class="section-header">
+      <span class="section-num">04.</span>
+      <h2 class="section-title">Certifications</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="certs-grid">
+      <div class="cert-card">
+        <div class="cert-badge cisco">&#11041;</div>
+        <div class="cert-name">CCNA — Routing &amp; Switching</div>
+        <div class="cert-issuer">Cisco · Verified</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge security">&#10792;</div>
+        <div class="cert-name">Ethical-Hacker</div>
+        <div class="cert-issuer">Cisco · Verified</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge cisco">&#11041;</div>
+        <div class="cert-name">CCNA Security</div>
+        <div class="cert-issuer">Cisco · Verified</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge aws">&#9671;</div>
+        <div class="cert-name">AWS Solutions Architect</div>
+        <div class="cert-issuer">Amazon Web Services</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CONTACT ═══════════════════════════ -->
+  <section id="contact" class="section-alt reveal">
+    <div class="section-header">
+      <span class="section-num">05.</span>
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Let's build something <span>extraordinary.</span></h3>
+        <p>Available for freelance projects, full-time positions, and consulting work in network engineering, software development, and cybersecurity architecture.</p>
+        <div class="contact-links">
+          <a href="mailto:your@email.com" class="contact-link">
+            <span class="icon">@</span>
+            <span>yassineklt94@gmail.com</span>
+          </a>
+          <a href="https://credly.com" class="contact-link" target="_blank">
+            <span class="icon">Cd</span>
+            <span>https://www.credly.com/users/yassine-kalthoum/badges#credly</span>
+          </a>
+          <a href="https://github.com" class="contact-link" target="_blank">
+            <span class="icon">gh</span>
+            <span>https://github.com/Yassiinneee</span>
+          </a>
+          <a href="#" class="contact-link">
+            <span class="icon">&#8857;</span>
+            <span>The entire world — Remote Available</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="nameInput">Name</label>
+          <input id="nameInput" type="text" placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label for="emailInput">Email</label>
+          <input id="emailInput" type="email" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label for="msgInput">Message</label>
+          <textarea id="msgInput" placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button class="btn-primary" id="sendBtn" type="button">Send Message &#8594;</button>
+        <div id="formFeedback" class="form-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FOOTER ════════════════════════════ -->
+  <footer>
+    <p>&#169; 2026 &mdash; Yassine KLT. Built with <span>precision</span>.</p>
+    <p class="footer-stack">Next.js &middot; React &middot; Angular &middot; Cisco Ethical-Hacker</p>
+  </footer>
+
+  <!-- Back to top button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">&#8679;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
